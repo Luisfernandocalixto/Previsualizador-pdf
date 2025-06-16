@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cuentos infantiles">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./img/rey.webp">
+    <meta property="og:description" content="Mostrando cuentos infantiles">
+
+    <title>Cuentos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/rey.webp" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="title">Cuentos infantiles</h1>
+    <div class="content-button">
+        <button class="contrast" data-target="modal-1" onclick="toggleModal(event)">
+            <img src="./img/dam.webp" width="150" alt="">
+        </button>
+        <button class="contrast" data-target="modal-2" onclick="toggleModal(event)">
+            <img src="./img/rey.webp" width="150" alt="">
+        </button>
+        <button class="contrast" data-target="modal-3" onclick="toggleModal(event)">
+            <img src="./img/pinocho.webp" width="150" alt="">
+        </button>
+    </div>
+
+    <dialog id="modal-1" open="false">
+        <article>
+            <header>
+                <button aria-label="Close" rel="prev" data-target="modal-1" onclick="toggleModal(event)"></button>
+                <h3>La Dama y el Vagabundo!</h3>
+            </header>
+
+            <embed src="./Disney.pdf">
+
+            <footer>
+                <button role="button" class="secondary" data-target="modal-1" onclick="toggleModal(event)">
+                    Cancelar</button><button autofocus="" data-target="modal-1" onclick="toggleModal(event)">
+                    Confirmar
+                </button>
+            </footer>
+        </article>
+    </dialog>
+    <dialog id="modal-3" open="false">
+        <article>
+            <header>
+                <button aria-label="Close" rel="prev" data-target="modal-3" onclick="toggleModal(event)"></button>
+                <h3>Pinocho!</h3>
+            </header>
+
+            <embed src="./DisneyWalt-Pinocho.pdf">
+
+            <footer>
+                <button role="button" class="secondary" data-target="modal-3" onclick="toggleModal(event)">
+                    Cancelar</button><button data-target="modal-3" onclick="toggleModal(event)">
+                    Confirmar
+                </button>
+            </footer>
+        </article>
+    </dialog>
+    <dialog id="modal-2" open="false">
+        <article>
+            <header>
+                <button aria-label="Close" rel="prev" data-target="modal-2" onclick="toggleModal(event)"></button>
+                <h3>El Rey Leon!</h3>
+            </header>
+
+            <embed src="./WaltDisney-ElReyLeon.pdf">
+
+            <footer>
+                <button role="button" class="secondary" data-target="modal-2" onclick="toggleModal(event)">
+                    Cancelar</button><button data-target="modal-2" onclick="toggleModal(event)">
+                    Confirmar
+                </button>
+            </footer>
+        </article>
+    </dialog>
+
+    <!--  script -->
+    <script src="./js/modal.js"></script>
+    <!--  script -->
+</body>
+
+</html>
