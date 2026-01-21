@@ -1,6 +1,6 @@
 .content-button {
-    display: flex !important;
-    justify-content: center !important;
+    display: flex;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
